@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/rails
+
 
 ### Rails ###
 *.rbc
@@ -53,5 +53,5 @@ node_modules/
 
 
 
-# End of https://www.gitignore.io/api/rails
+# Extra
 ubuntu-xenial-16.04-cloudimg-console.log
