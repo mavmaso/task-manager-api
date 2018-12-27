@@ -20,6 +20,15 @@ before_action :authenticate_with_token!
     end
   end
 
+  def update
+    task = current_user.tasks.find(params[:id])
+    if task.update_attributes(task_params)
+      render json: task, status:200
+    else
+      render json: { errors: task.errors }, status: 422
+    end
+  end
+
   private
 
     def task_params
