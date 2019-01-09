@@ -9,4 +9,6 @@ class Api::V2::TaskSerializer < ActiveModel::Serializer
   def is_late
     Time.current > object.deadline if object.deadline.present? 
   end
+
+  belongs_to :user
 end
