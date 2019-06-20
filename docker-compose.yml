@@ -1,0 +1,32 @@
+version: '3.5'
+
+volumes:
+  mysql:
+  gems:
+
+services:
+  app:
+    container_name: task-manager
+    hostname: task-manager
+    depends_on:
+      - db
+    build: .
+    command: bash start.sh
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/fonte
+      - gems:/gems
+    stdin_open: true
+    tty: true
+
+  db:
+    container_name: db-task-manager
+    hostname: db-task-manager
+    image: mysql:5.6
+    volumes:
+      - mysql:/var/lib/mysql
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+    ports:
+      - "33062:3306"

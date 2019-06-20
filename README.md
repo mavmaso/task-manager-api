@@ -1,5 +1,9 @@
 # README
 
+RUBY_VERSION="2.4.0"
+RAILS_VERSION="5.0.2"
+MYSQL_PASSWORD="123456"
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
