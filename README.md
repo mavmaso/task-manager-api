@@ -1,7 +1,7 @@
 # README
 
-* RUBY_VERSION="2.4.0"
-* RAILS_VERSION="5.0.2"
+* RUBY_VERSION="2.5.1"
+* RAILS_VERSION="5.0.7"
 * MYSQL_PASSWORD="123456"
 
 # task-manager-api
