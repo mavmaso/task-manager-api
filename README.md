@@ -16,3 +16,5 @@
 
 - JSON: 
 { "user":{ "email": "joao@mail.com", "password": "123456" } }
+
+{"task": {"title": "Arrumar a casa","description": "ja viu ne","deadline": "2019-06-30 18:00:00","done": "false"}}

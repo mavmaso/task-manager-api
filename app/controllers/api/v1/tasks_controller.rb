@@ -8,7 +8,7 @@ before_action :authenticate_with_token!
 
   def show
     task = current_user.tasks.find(params[:id])
-    render json: task, status: 200
+    render json: { task: task }, status: 200
   end
 
   def create
